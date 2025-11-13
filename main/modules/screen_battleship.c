@@ -795,7 +795,8 @@ screen_t screen_battleship_splash(
         // logic
         if (player_data[BS_invite] == invitation_sent && ennemy_data[BS_invite] == BS_default) {  // 1A
             WaitingforOpponent("Waiting for reply", application_event_queue, keyboard_event_queue);
-        } else if (ennemy_data[BS_invite] == invitation_sent && ennemy_data[BS_abort] == playing_game && invitationrepliedto == false) {  // 1B
+        } else if (ennemy_data[BS_invite] == invitation_sent && ennemy_data[BS_abort] == playing_game &&
+                   invitationrepliedto == false) {  // 1B
 
             if (Screen_Confirmation(
                     "Player 2 invited you to a game of Carondelet",
@@ -1141,7 +1142,7 @@ screen_t screen_battleship_battle(
     bool sendflag                   = true;
     int  ennemy_phase               = 0;
     int  timer_track                = esp_timer_get_time() / (BroadcastInterval * 1000000);
-    bool populate_ennemy_board      = true;
+    // bool populate_ennemy_board      = true;
 
     int last_ennemy_turn = 0;
 
@@ -1181,7 +1182,7 @@ screen_t screen_battleship_battle(
         ESP_LOGE(TAG, "Failed to add listener");
     } else
         ESP_LOGI(TAG, "listening");
-    badge_comms_message_t message;
+    // badge_comms_message_t message;
 
     while (1) {
         event_t event = {0};

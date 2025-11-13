@@ -8,7 +8,7 @@
 #define maxIDrepertoire   500
 #define maxIDsurrounding  5
 #define remove            0
-#define add               1
+#define ADD_CMD           1
 #define BroadcastInterval 5
 
 struct cursor_t {

@@ -98,5 +98,8 @@
     },
     "editor.formatOnType": false,
     "editor.formatOnSave": true,
-    "C_Cpp.clang_format_style": "file"
+    "C_Cpp.clang_format_style": "file",
+    "idf.openOcdConfigs": [
+        "board/esp32c6-builtin.cfg"
+    ]
 }

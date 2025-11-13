@@ -167,7 +167,7 @@ void Display_repertoire(
 
     if (cursor.x == remove && addrmflag == 1)
         AddOneTextSWtoBuffer(SWITCH_5, "Remove");
-    if (cursor.x == add && addrmflag == 1)
+    if (cursor.x == ADD_CMD && addrmflag == 1)
         AddOneTextSWtoBuffer(SWITCH_5, "Add");
 
     if (!show_name_or_mac) {
@@ -493,7 +493,7 @@ screen_t screen_repertoire_entry(QueueHandle_t application_event_queue, QueueHan
                                             cursor.y--;
                                     }
                                     break;
-                                case add:
+                                case ADD_CMD:
                                     StoreRepertoire(
                                         surroundingIDlist[cursor.yabs],
                                         surrounding_mac[cursor.yabs],

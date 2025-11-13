@@ -5,6 +5,7 @@
 
 #include "badge-communication-ieee802154.h"
 #include "freertos/FreeRTOS.h"
+#include <time.h>
 
 #define BADGE_COMMUNICATION_PAN     0x1337
 #define BADGE_COMMUNICATION_CHANNEL 24

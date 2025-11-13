@@ -2196,7 +2196,7 @@ screen_t screen_pointclick_town1(
     int displayflag  = 1;
     int nbdirection  = 4;
     int move_forward = 0;
-    int move_back    = 0;
+    // int move_back    = 0;
     int button2      = 0;
     int button4      = 0;
     ESP_LOGE(TAG, "town1");
@@ -2267,7 +2267,7 @@ screen_t screen_pointclick_town1(
             displayflag = 0;
         }
         move_forward  = 0;
-        move_back     = 0;
+        // move_back     = 0;
         button2       = 0;
         button4       = 0;
         event_t event = {0};

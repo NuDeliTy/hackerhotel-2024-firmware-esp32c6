@@ -1090,7 +1090,7 @@ esp_err_t nvs_get_u8_blob_wrapped(const char* namespace, const char* key, uint8_
     }
     res = nvs_get_blob(handle, key, value, &length);
     if (res != ESP_OK) {
-        value[0] = NULL;
+        value[0] = 0;
         return res;
     }
     nvs_close(handle);
