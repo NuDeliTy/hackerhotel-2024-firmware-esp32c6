@@ -9,6 +9,7 @@
  *
  */
 
+
 #pragma once
 
 #include "hal/adc_types.h"

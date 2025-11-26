@@ -101,5 +101,6 @@
     "C_Cpp.clang_format_style": "file",
     "idf.openOcdConfigs": [
         "board/esp32c6-builtin.cfg"
-    ]
+    ],
+    "idf.flashType": "UART"
 }
